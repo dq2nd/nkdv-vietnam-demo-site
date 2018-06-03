@@ -1,69 +1,159 @@
 body {
     background-color: #FFFFFF;
-    width: 1920px;
     margin: auto;
     font-family: 'Comfortaa';
 }
 
-div.header {
+body > div.container-fluid {
+    max-width: 1200px;
+}
+
+/* HEADER */
+div#header {
     height: 100px;
 }
 
-div.header a {
+div#header a {
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-div.header ul.nav {
+div#header > div.logo > a,
+div#header > div.logo > a:hover {
+    float: left;
+    margin-top: 18px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 67px;
+    color: #3C4DA0;
+}
+
+div#header > div.navigator {
     float: right;
 }
 
-div.header nav {
+div#header > div.navigator > ul {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-div.carousel {
+div#header > div.navigator > ul > li {
+    float: left;
+}
+
+div#header > div.navigator > ul > li > a {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    color: #3C4DA0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+}
+
+div#header > div.navigator > ul > li:not(.dropdown-language) > a.active,
+div#header > div.navigator > ul > li:not(.dropdown-language) > a:hover {
+    padding-bottom: 6px;
+    border-bottom: 3px solid;
+    border-bottom-color: linear-gradient(#3C4DA0, #48C6EF);
+}
+
+div#header > div.navigator > ul > li.dropdown-language > a {
+    margin-top: 37px;
+}
+
+div#header > div.navigator > ul > li.dropdown-language > div.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+div#header > div.navigator > ul > li.dropdown-language:hover > div.dropdown-content {
+    display: block;
+}
+
+div#header > div.navigator > ul > li.dropdown-language > div.dropdown-content > a {
+    display: block;
+}
+
+/* EVENTS */
+div#news {
+    background-image: url('./assets/image/Group\ 1.png');
+    width: 1920px;
     height: 887px;
+    margin-left: -375px;
 }
 
-div.who-we-are {
+div#news div {
+    margin-left: 360px;
+}
+
+div#news > div.title {
+    text-transform: uppercase;
+    margin-top: 335px;
+    font-size: 60px;
+    line-height: 80px;
+    color: #3C4DA0;
+    width: 558px;
+}
+
+div#news > div.content {
+    margin-top: 51px;
+    width: 558px;
+    font-size: 28px;
+    line-height: 32px;
+    color: #3C4DA0;
+}
+
+div#news > div.btn {
+    margin-top: 51px;
+}
+
+/* WHO-WE-ARE */
+div#who-we-are > div.left {
     position: relative;
 }
 
-div.who-we-are > img#image-1 {
+div#who-we-are > div.left > img#image-1 {
     position: absolute;
-    left: 387px;
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    left: 20%;
     top: 150px;
     z-index: 1;
 }
 
-div.who-we-are > img#image-2 {
+div#who-we-are > div.left > img#image-2 {
     position: absolute;
-    left: 583px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    left: 30%;
     top: 409px;
     z-index: 2;
 }
 
-div.who-we-are > div.wrapper {
-    position: absolute;
-    left: 1037px;
-    top: 216px;
-    width: 460px;
-}
-
-div.who-we-are > div.wrapper > div.title {
+div#who-we-are > div.right > div.title {
+    margin-top: 216px;
     font-size: 40px;
     color: #3C4DA0;
     line-height: 44px;
-    height: 56px;
 }
 
-div.who-we-are > div.wrapper > div.content {
+div#who-we-are > div.right > div.content {
+    margin-top: 35px;
     font-size: 16px;
     line-height: 26px;
     color: #112D56;
 }
 
-div.who-we-are > div.wrapper > div.btn {
+div#who-we-are > div.right > div.btn {
     margin-top: 50px;
 }
 
@@ -74,7 +164,7 @@ div.title {
 div.btn {
     text-transform: uppercase;
     padding: 16px 60px;
-    border: 2px solid;
+    border: 2px;
     border-radius: 25px;
     background: linear-gradient(#3C4DA0, #48C6EF);
     color: #FFFFFF;
@@ -83,4 +173,5 @@ div.btn {
 div.btn:hover {
     border-color: #3C4DA0;
     background: #FFFFFF;
+    border: 2px solid #3C4DA0;
 }
