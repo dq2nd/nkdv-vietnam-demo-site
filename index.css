@@ -5,7 +5,7 @@ body {
 }
 
 body > div.container-fluid {
-    max-width: 1200px;
+    max-width: 1146px;
 }
 
 /* HEADER */
@@ -81,7 +81,7 @@ div#header > div.navigator > ul > li.dropdown-language > div.dropdown-content > 
     display: block;
 }
 
-/* EVENTS */
+/* NEWS */
 div#news {
     background-image: url('./assets/image/Group\ 1.png');
     width: 1920px;
@@ -115,28 +115,24 @@ div#news > div.btn {
 }
 
 /* WHO-WE-ARE */
-div#who-we-are > div.left {
-    position: relative;
+div#who-we-are {
+    min-height: 773px;
 }
 
 div#who-we-are > div.left > img#image-1 {
     position: absolute;
-    width: 100%;
-    max-width: 460px;
-    height: auto;
-    left: 20%;
     top: 150px;
-    z-index: 1;
+    left: -5px;
 }
 
 div#who-we-are > div.left > img#image-2 {
     position: absolute;
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-    left: 30%;
     top: 409px;
-    z-index: 2;
+    left: 196px;
+}
+
+div#who-we-are > div.right > div {
+    margin-left: -15px;
 }
 
 div#who-we-are > div.right > div.title {
@@ -155,6 +151,14 @@ div#who-we-are > div.right > div.content {
 
 div#who-we-are > div.right > div.btn {
     margin-top: 50px;
+}
+
+/* STATS */
+div#stats {
+    height: 240px;
+    margin-left: -375px;
+    margin-right: -375px;
+    background-color: #EEF5FF;
 }
 
 div.title {
